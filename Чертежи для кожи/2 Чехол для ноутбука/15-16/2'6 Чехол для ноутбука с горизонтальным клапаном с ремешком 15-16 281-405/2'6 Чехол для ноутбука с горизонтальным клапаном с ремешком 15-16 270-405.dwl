@@ -1,3 +1,0 @@
-Daniil
-DESKTOP-8GM4JRQ 
-3 ÿםגאנÿ 2025 ד.  18:58:31
