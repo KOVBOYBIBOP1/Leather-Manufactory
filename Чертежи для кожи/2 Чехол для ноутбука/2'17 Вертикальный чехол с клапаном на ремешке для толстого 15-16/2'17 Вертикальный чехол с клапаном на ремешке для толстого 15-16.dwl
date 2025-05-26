@@ -1,0 +1,3 @@
+Daniil
+DESKTOP-8GM4JRQ 
+25 мая 2025 г.  22:47:32
