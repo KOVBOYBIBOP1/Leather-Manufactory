@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightBurnProject AppVersion="1.5.06" FormatVersion="1" MaterialHeight="0" MirrorX="True" MirrorY="False">
+    <Thumbnail Source="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"/>
+    <VariableText>
+        <Start Value="0"/>
+        <End Value="999"/>
+        <Current Value="0"/>
+        <Increment Value="1"/>
+        <AutoAdvance Value="0"/>
+    </VariableText>
+    <UIPrefs>
+        <Optimize_ByLayer Value="0"/>
+        <Optimize_ByGroup Value="-1"/>
+        <Optimize_ByPriority Value="1"/>
+        <Optimize_WhichDirection Value="0"/>
+        <Optimize_InnerToOuter Value="1"/>
+        <Optimize_ByDirection Value="0"/>
+        <Optimize_ReduceTravel Value="1"/>
+        <Optimize_HideBacklash Value="0"/>
+        <Optimize_ReduceDirChanges Value="0"/>
+        <Optimize_ChooseCorners Value="0"/>
+        <Optimize_AllowReverse Value="1"/>
+        <Optimize_RemoveOverlaps Value="0"/>
+        <Optimize_OptimalEntryPoint Value="1"/>
+        <Optimize_OverlapDist Value="0.025"/>
+    </UIPrefs>
+    <CutSetting type="Cut">
+        <index Value="0"/>
+        <name Value="C00"/>
+        <minPower Value="3"/>
+        <maxPower Value="95"/>
+        <maxPower2 Value="20"/>
+        <speed Value="10.8333"/>
+        <priority Value="0"/>
+        <manualTabs Value="0"/>
+        <tabSize Value="0.2"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+        <tabSpacing Value="100"/>
+        <tabsUseSpacing Value="0"/>
+    </CutSetting>
+    <CutSetting type="Scan">
+        <index Value="25"/>
+        <name Value="C25"/>
+        <minPower Value="10"/>
+        <maxPower Value="10"/>
+        <maxPower2 Value="20"/>
+        <speed Value="166.667"/>
+        <scanOpt Value="byGroup"/>
+        <overscanPercent Value="0.5"/>
+        <interval Value="0.05"/>
+        <priority Value="1"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+    </CutSetting>
+    <Shape Type="Group" CutIndex="0">
+        <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 959.24567 27.627075</XForm>
+        <Children>
+            <Shape Type="Group" CutIndex="0">
+                <XForm>1 0 0 1 71.372894 -104.1897</XForm>
+                <Children>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 656.46844</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 648.34698</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 640.22552</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 632.10406</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 623.98267</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 615.86121</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 607.73975</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.00317 599.62415</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 561.91095 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 553.78949 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 545.66803 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 537.54657 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 529.42511 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 521.30365 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 513.18219 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 505.06073 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 496.93927 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 488.81787 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 480.69641 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 472.57495 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 464.45349 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 456.33203 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 448.21057 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 440.08911 595.49438</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.99689 599.62415</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 607.73975</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 615.86121</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 623.98267</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 632.10406</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 640.22552</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 648.34698</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 656.46844</XForm>
+                    </Shape>
+                    <Shape Type="Path" CutIndex="0" VertID="3" PrimID="0">
+                        <XForm>-1 0 0 1 571.84552 585.01733</XForm>
+                        <VertList>V0 79.572571c0x1c1x1V0 15.572572c0x9.5367432e-07c0y10.687335c1x1V8.8455 6.7270713c0x1c1x3.9602671c1y6.7270699V132.8455 6.7270713c0x137.73074c0y6.7270708c1x1V141.69099 15.572572c0x1c1x141.69101c1y10.687337V141.69099 79.572571c0x1c1x1</VertList>
+                        <PrimList>L0 1B1 2L2 3B3 4L4 5L5 0</PrimList>
+                    </Shape>
+                    <Shape Type="Path" CutIndex="0" VertID="1" PrimID="2">
+                        <XForm>-1 0 0 1 571.84552 585.01733</XForm>
+                        <VertList>V79.5 72.904755c0x1c1x79.186424c1y73.0858V79.5 17.694891c0x79.186424c0y17.513847c1x1V79.127258 16.795012c0x79.22097c0y16.445263c1x79.033546c1y17.14476V79.900002 16.202065c0x80.262085c0y16.202065c1x79.537918c1y16.202065V80.672745 16.795012c0x80.766457c0y17.14476c1x80.579033c1y16.445263V80.300003 17.694891c0x1c1x80.613579c1y17.513847V80.300003 72.904755c0x80.613579c0y73.0858c1x1V80.672745 73.804634c0x80.579033c0y74.154381c1x80.766457c1y73.454887V79.900002 74.397583c0x79.537918c0y74.397583c1x80.262085c1y74.397583V79.127258 73.804634c0x79.033546c0y73.454887c1x79.22097c1y74.154381</VertList>
+                        <PrimList>L0 1B1 2B2 3B3 4B4 5L5 6B6 7B7 8B8 9B9 0</PrimList>
+                    </Shape>
+                </Children>
+            </Shape>
+            <Shape Type="Group" CutIndex="0">
+                <XForm>1 0 0 1 71.372894 -106.50421</XForm>
+                <Children>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 731.62842</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 723.50696</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 715.38556</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 707.2641</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 699.14264</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 691.02118</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.90454 682.89972</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 433.99689 674.78418</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 440.08911 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 448.21057 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 456.33203 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 464.45349 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 472.57495 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 480.69641 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 488.81787 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 496.93927 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 505.06073 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 513.18219 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 521.30365 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 529.42511 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 537.54657 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 545.66803 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 553.78949 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 561.91095 670.65442</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.00317 674.78418</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 682.89972</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 691.02118</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 699.14264</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 707.2641</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 715.38556</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 723.50696</XForm>
+                    </Shape>
+                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                        <XForm>-1 0 0 1 568.09552 731.62842</XForm>
+                    </Shape>
+                    <Shape Type="Path" CutIndex="0" VertID="4" PrimID="0">
+                        <XForm>-1 0 0 1 571.84552 585.01733</XForm>
+                        <VertList>V141.69099 154.73257c0x1c1x1V141.69099 90.732567c0x141.69101c0y85.847336c1x1V132.8455 81.88707c0x1c1x137.73074c1y81.88707V8.8455 81.88707c0x3.9602637c0y81.88707c1x1V0 90.732567c0x1c1x-3.8146973e-06c1y85.847336V0 154.73257c0x1c1x1</VertList>
+                    </Shape>
+                    <Shape Type="Path" CutIndex="0" VertID="2" PrimID="2">
+                        <XForm>-1 0 0 1 571.84552 585.01733</XForm>
+                        <VertList>V62.191002 148.06474c0x1c1x62.504578c1y148.24579V62.191002 92.854889c0x62.504578c0y92.673843c1x1V62.563744 91.955009c0x62.470028c0y91.605263c1x62.657459c1y92.304756V61.791 91.362061c0x61.428913c0y91.362061c1x62.153088c1y91.362061V61.018257 91.955009c0x60.924541c0y92.304756c1x61.111973c1y91.605263V61.390999 92.854889c0x1c1x61.077423c1y92.673843V61.390999 148.06474c0x61.077423c0y148.24579c1x1V61.018257 148.96463c0x61.111969c0y149.31438c1x60.924541c1y148.61487V61.791 149.55757c0x62.153088c0y149.55757c1x61.428913c1y149.55757V62.563744 148.96463c0x62.657459c0y148.61487c1x62.470032c1y149.31438</VertList>
+                    </Shape>
+                </Children>
+            </Shape>
+            <Shape Type="Group" CutIndex="0">
+                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 1385.783 259.09119</XForm>
+                <Children>
+                    <Shape Type="Group" CutIndex="0">
+                        <XForm>-1 0 0 1 571.84552 585.01733</XForm>
+                        <Children>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6089.5679 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6097.689 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6105.8105 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6113.9321 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6122.0537 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6130.1748 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6138.2964 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6146.418 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>0.98187476 0.18953101 -0.18953101 0.98187476 5950.8628 1786.9346</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6132.2041</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6140.3252</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6148.4468</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6156.5684</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6164.6899</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6172.811</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6180.9326</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6189.0542</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6197.1758</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6205.2969</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6213.4185</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6221.54</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6229.6616</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6237.7827</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6245.9043</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6254.0259</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-0.98187476 0.189531 -0.189531 -0.98187476 -5762.3579 930.85046</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5783.0264 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5791.1479 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5799.2695 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5807.3906 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5815.5122 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5823.6338 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5831.7554 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5839.8765 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                        </Children>
+                    </Shape>
+                    <Shape Type="Group" CutIndex="0">
+                        <XForm>1 0 0 1 374.1546 585.01733</XForm>
+                        <Children>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6089.5679 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6097.689 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6105.8105 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6113.9321 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6122.0537 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6130.1748 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6138.2964 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>1 0 0 1 6146.418 665.48083</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>0.98187476 0.18953101 -0.18953101 0.98187476 5950.8628 1786.9346</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6132.2041</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6140.3252</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6148.4468</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6156.5684</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6164.6899</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6172.811</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6180.9326</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6189.0542</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6197.1758</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6205.2969</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6213.4185</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6221.54</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6229.6616</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6237.7827</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6245.9043</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-4.3711388e-08 1 -1 -4.3711388e-08 -310.24292 6254.0259</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-0.98187476 0.189531 -0.189531 -0.98187476 -5762.3579 930.85046</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5783.0264 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5791.1479 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5799.2695 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5807.3906 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5815.5122 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5823.6338 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5831.7554 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                            <Shape Type="Group" CutIndex="0">
+                                <XForm>-1 -8.7422777e-08 8.7422777e-08 -1 -5839.8765 -208.69592</XForm>
+                                <Children>
+                                    <Shape Type="Ellipse" CutIndex="0" Rx="0.75" Ry="0.75">
+                                        <XForm>1 0 0 1 -5964.7222 -504.18362</XForm>
+                                    </Shape>
+                                </Children>
+                            </Shape>
+                        </Children>
+                    </Shape>
+                    <Shape Type="Path" CutIndex="0" VertID="0">
+                        <XForm>-1 0 0 1 571.84552 585.01733</XForm>
+                        <VertList>V197.69099 166.39273c0x1c1x197.69101c1y161.50749V197.69099 290.39273c0x197.69099c0y295.27795c1x1V188.8455 299.23822c0x1c1x193.73074c1y299.23825V8.8455 299.23822c0x3.9602628c0y299.23822c1x1V0 290.39273c0x1c1x-8.5830688e-06c1y295.27795V0 166.39273c0x-4.7683716e-06c0y161.50749c1x1V8.8455 157.54723c0x1c1x3.960259c1y157.54721V188.8455 157.54723c0x193.73074c0y157.54721c1x1</VertList>
+                        <PrimList>L0 1B1 2L2 3B3 4L4 5B5 6L6 7B7 0</PrimList>
+                    </Shape>
+                </Children>
+            </Shape>
+        </Children>
+    </Shape>
+    <Shape Type="Text" CutIndex="25" Font="Martina scriptC,-1,100,5,50,0,0,0,0,0" Str="O.М." H="12.361889" LS="0" LnS="0" Ah="1" Av="1" Weld="1" HasBackupPath="1">
+        <BackupPath Type="Path" CutIndex="25">
+            <XForm>1 0 0 1 150.08092 547.13934</XForm>
+            <VertList>V10.525879 -8.855957c0x11.09405c0y-8.7875042c1x10.355443c1y-8.869669V11.705078 -7.8237305c0x11.839755c0y-7.3149381c1x11.562038c1y-8.3778458V11.720703 -6.269043c0x11.442594c0y-5.1909094c1x11.845126c1y-6.7804399V10.331055 -3.2617188c0x9.7383242c0y-2.3755784c1x10.971881c1y-4.1722441V8.2207031 -0.87792969c0x1c1x9.0284452c1y-1.57372V8.0722656 -0.89013672c0x8.6044035c0y-1.470922c1x1V9.4506836 -2.7998047c0x10.127127c0y-3.8995495c1x9.0670271c1y-2.1118426V11.001953 -6.3291016c0x11.176614c0y-6.9227276c1x10.649113c1y-5.0871201V11.021484 -8.1503906c0x10.957701c0y-8.4102364c1x11.183375c1y-7.553154V10.503906 -8.6923828c0x10.211213c0y-8.732728c1x10.760537c1y-8.6166954V9.6362305 -8.5976563c0x8.9651814c0y-8.3141155c1x9.9133263c1y-8.7002058V7.8452148 -7.3828125c0x6.130127c0y-5.644104c1x8.356802c1y-7.9014516V4.140625 -1.1845703c0x4.0061102c0y-0.74584472c1x4.8597279c1y-3.5185697V4.0019531 0.171875c0x4.0432086c0y0.53766048c1x3.9589968c1y-0.28499618V4.5092773 1.1074219c0x4.7394881c0y1.2742457c1x4.2252188c1y0.87330234V5.3032227 1.3476563c0x5.9206147c0y1.3329254c1x5.0191422c1y1.3588645V7.0400391 0.81103516c0x7.8328872c0y0.31476498c1x6.5219393c1y1.1471354V9.1293945 -1.0336914c0x9.8164759c0y-1.8472233c1x8.5387249c1y-0.30843067V10.915527 -3.6713867c0x1c1x10.415198c1y-2.7313938V11.014648 -3.6098633c0x10.217781c0y-1.9704065c1x1V7.6147461 0.58105469c0x7.0336051c0y1.0417206c1x9.0546856c1y-0.53670597V5.605957 1.4438477c0x5.1665025c0y1.5171187c1x6.3401642c1y1.3395596V4.3408203 1.1826172c0x3.9396119c0y0.87765801c1x4.7153134c1y1.4239554V3.6245117 -0.079101563c0x3.526288c0y-0.74633473c1x3.6807547c1y0.42170194V3.746582 -2.0771484c0x4.4355917c0y-4.5420852c1x3.5678635c1y-1.4268355V8.1157227 -8.0957031c0x8.6855679c0y-8.4818029c1x5.9854574c1y-6.6770463V10.014648 -8.8413086c0x10.18402c0y-8.8647585c1x9.3343372c1y-8.7365389V1.4326172 -8.7958984c0x1.8184938c0y-8.7818108c1x1.0990925c1y-8.8147583V2.4444718 -8.33041c0x2.7051008c0y-8.045536c1x2.1838431c1y-8.615284V2.8183594 -7.28125c0x2.7929904c0y-6.7029157c1x2.8385589c1y-7.6668544V2.3798828 -5.621582c0x1.4583178c0y-3.7706442c1x2.643472c1y-6.1369781V-1.8950195 -1.3540039c0x-2.5891166c0y-0.99879599c1x-0.042504311c1y-2.2723932V-4.1450195 -0.89697266c0x-4.7007384c0y-0.93572313c1x-3.3673441c1y-0.84071875V-5.1054688 -1.965332c0x-5.0721002c0y-2.5117655c1x-5.1258864c1y-1.4086378V-4.6015625 -3.5c0x-4.1375747c0y-4.2799659c1x-4.8986073c1y-3.0401449V-2.7875977 -5.4931641c0x-1.9833603c0y-6.1324401c1x-3.5205293c1y-4.9579682V-0.20605469 -7.1635742c0x1c1x-1.1187344c1y-6.6919036V-0.086425781 -7.2192383c0x1c1x1V-0.037109375 -7.1450195c0x1c1x1V-0.16162109 -7.0708008c0x-1.3305664c0y-6.3277636c1x1V-3.4238281 -4.5136719c0x-4.0133977c0y-3.9292388c1x-2.4231224c1y-5.4713488V-4.7827148 -2.4580078c0x-4.8834553c0y-2.1881647c1x-4.4760041c1y-3.2294292V-4.8950195 -1.6123047c0x-4.8291688c0y-1.3317646c1x-4.9218431c1y-1.8990885V-4.3037109 -1.0996094c0x-3.7641256c0y-1.0732155c1x-4.5907516c1y-1.1250439V-2.7504883 -1.4462891c0x-1.5045152c0y-2.0949392c1x-3.2276399c1y-1.1929593V0.55224609 -4.0083008c0x1.335309c0y-4.8045011c1x-0.38582945c1y-2.9627314V2.4736328 -6.7260742c0x2.6275005c0y-7.0306053c1x1.9841719c1y-5.7223077V2.6357422 -7.7128906c0x2.5881734c0y-7.9937592c1x2.6840987c1y-7.3751378V2.1206055 -8.3178711c0x1.9105c0y-8.4035616c1x2.3903012c1y-8.226141V1.4584961 -8.4433594c0x0.68632865c0y-8.4363632c1x1.6853856c1y-8.4462271V-0.76904297 -7.9199219c0x-1.8144727c0y-7.417038c1x-0.074570179c1y-8.2575626V-3.6035156 -5.9399414c0x-4.7444344c0y-4.8336372c1x-2.7715764c1y-6.7484684V-6.8066406 -2.4150391c0x1c1x-5.8142624c1y-3.6563377V-7.0576172 -2.1181641c0x1c1x1V-7.293457 -1.8417969c0x-7.5898228c0y-1.477541c1x1V-8.1650391 -0.73535156c0x1c1x-7.8802967c1y-1.1087933V-8.4506836 -0.37841797c0x-8.8716536c0y0.18680716c1x1V-9.8955078 1.1557617c0x-10.024412c0y1.2893732c1x-9.3565292c1y0.70166922V-10.392578 1.3398438c0x-10.447754c0y1.329536c1x-10.207741c1y1.3572657V-10.48291 1.2236328c0x-10.408638c0y1.0064564c1x-10.486532c1y1.2796462V-10.176758 0.61035156c0x-9.3415146c0y-0.80755997c1x-10.305694c1y0.8002398V-7.546875 -3.5664063c0x1c1x-8.4645157c1y-2.2003975V-6.7744141 -4.7592773c0x1c1x1V-6.8730469 -4.7592773c0x1c1x1V-9.4199219 -1.6689453c0x1c1x1V-9.5249023 -1.5341797c0x-10.255764c0y-0.60564613c1x1V-11.812012 1.1728516c0x-11.971314c0y1.3801258c1x-11.018559c1y0.29719543V-12.491699 1.4091797c0x-12.505375c0y1.3869393c1x-12.238168c1y1.4729114V-12.510254 1.3349609c0x-12.446898c0y1.1674218c1x-12.511852c1y1.3610204V-12.253906 0.86572266c0x-11.326645c0y-0.55132294c1x-12.360655c1y1.0095561V-9.4199219 -3.3500977c0x1c1x-10.382004c1y-1.9565506V-8.8696289 -4.2089844c0x-8.1265774c0y-5.3229427c1x1V-6.8198242 -7.6606445c0x-6.7094455c0y-7.839417c1x-7.4423561c1y-6.4751034V-6.6010742 -8.2456055c0x-6.5979137c0y-8.3409805c1x-6.6350827c1y-8.0382738V-6.7495117 -8.4555664c0x-6.8958716c0y-8.4121675c1x-6.6585407c1y-8.4267435V-7.1279297 -8.2143555c0x-7.4527993c0y-7.8809671c1x-7.0267997c1y-8.3287125V-8.0229492 -7.1450195c0x1c1x-7.7519765c1y-7.5235214V-8.121582 -7.2192383c0x-7.8488894c0y-7.6495647c1x1V-7.1713867 -8.4106445c0x-7.0397487c0y-8.5644865c1x-7.5302725c1y-8.0490646V-6.6508789 -8.6782227c0x-6.5033884c0y-8.6773634c1x-6.8525934c1y-8.660697V-6.3417969 -8.4321289c0x-6.295908c0y-8.1436558c1x-6.3756771c1y-8.5756769V-6.4404297 -7.5776367c0x-6.74545c0y-6.7535739c1x-6.3300266c1y-7.8480697V-7.5888672 -5.2119141c0x-8.5094643c0y-3.7043839c1x-7.1300516c1y-5.9613137V-10.507813 -0.79101563c0x1c1x-9.4830818c1y-2.2297897V-10.433594 -0.76660156c0x-8.275177c0y-3.3107758c1x1V-4.2773438 -8.6533203c0x1c1x-6.2213898c1y-5.9418793V-3.7333984 -8.5419922c0x1c1x1V-4.0922852 -8.0380859c0x-4.6718254c0y-7.1917572c1x1V-5.7436523 -5.4423828c0x1c1x-5.2226372c1y-6.3259621V-6.4033203 -4.4008789c0x1c1x1V-7.0043945 -3.4580078c0x-7.632082c0y-2.507782c1x1V-8.7646484 -0.53173828c0x1c1x-8.2193317c1y-1.5315323V-8.7026367 -0.51904297c0x-7.6312561c0y-1.7777328c1x1V-5.5336914 -4.3344727c0x1c1x-6.5743103c1y-3.0503006V-5.0063477 -4.9448242c0x-4.1365218c0y-5.962543c1x1V-2.0395508 -7.6274414c0x-1.2904201c0y-8.145381c1x-3.1394172c1y-6.8641372V0.4375 -8.7211914c0x0.76447064c0y-8.7896366c1x-0.44994688c1y-8.5164948V4.6938477 -8.6484375c0x4.7867184c0y-8.6062603c1x4.6458569c1y-8.6581287V4.8212891 -8.40625c0x4.8012342c0y-8.1286573c1x4.8391132c1y-8.5066805V4.4116211 -7.7324219c0x4.3432455c0y-7.6963263c1x4.6488342c1y-7.8779888V4.2006836 -7.7553711c0x4.1260738c0y-7.878067c1x4.2596931c1y-7.7054119V4.1845703 -8.1586914c0x4.2365055c0y-8.3606262c1x4.1199865c1y-8.0304346V4.5507813 -8.6347656c0x4.5960708c0y-8.6533642c1x4.3689246c1y-8.5327721V-9.5224609 -8.6484375c0x-9.4295807c0y-8.6062708c1x-9.5704508c1y-8.658144V-9.3950195 -8.40625c0x-9.4146652c0y-8.1285372c1x-9.3771791c1y-8.5066814V-9.8046875 -7.7324219c0x-9.8730993c0y-7.6964908c1x-9.5671787c1y-7.8776798V-10.015625 -7.7553711c0x-10.089592c0y-7.8782611c1x-9.9565449c1y-7.7055645V-10.031738 -8.1586914c0x-9.9798059c0y-8.3606272c1x-10.095675c1y-8.0302973V-9.6655273 -8.6347656c0x-9.6202412c0y-8.6533766c1x-9.8473873c1y-8.5327749</VertList>
+            <PrimList>B0 1B1 2B2 3B3 4L4 5B5 6B6 7B7 8B8 9B9 10B10 11B11 12B12 13B13 14B14 15B15 16B16 17B17 18L18 19B19 20B20 21B21 22B22 23B23 24B24 25B25 26B26 0B27 28B28 29B29 30B30 31B31 32B32 33B33 34B34 35B35 36L36 37L37 38L38 39B39 40B40 41B41 42B42 43B43 44B44 45B45 46B46 47B47 48B48 49B49 50B50 51B51 52L52 53L53 54B54 55L55 56B56 57B57 58B58 59B59 60B60 61L61 62L62 63L63 64L64 65B65 66B66 67B67 68B68 69B69 70L70 71B71 72B72 73B73 74B74 75B75 76L76 77B77 78B78 79B79 80B80 81B81 82B82 83L83 84B84 85L85 86L86 87B87 88L88 89L89 90B90 91L91 92B92 93L93 94B94 95B95 96B96 27B97 98B98 99B99 100B100 101B101 102B102 97B103 104B104 105B105 106B106 107B107 108B108 103</PrimList>
+        </BackupPath>
+        <XForm>1 0 0 1 150.08092 547.13934</XForm>
+    </Shape>
+    <Notes ShowOnLoad="0" Notes=""/>
+</LightBurnProject>
