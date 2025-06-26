@@ -1,3 +1,0 @@
-Daniil
-DESKTOP-8GM4JRQ 
-26 θώνÿ 2025 γ.  15:56:53
