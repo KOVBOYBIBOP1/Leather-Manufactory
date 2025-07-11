@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightBurnProject AppVersion="1.5.06" FormatVersion="1" MaterialHeight="0" MirrorX="True" MirrorY="False">
+    <Thumbnail Source="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"/>
+    <VariableText>
+        <Start Value="0"/>
+        <End Value="999"/>
+        <Current Value="0"/>
+        <Increment Value="1"/>
+        <AutoAdvance Value="0"/>
+    </VariableText>
+    <UIPrefs>
+        <Optimize_ByLayer Value="0"/>
+        <Optimize_ByGroup Value="-1"/>
+        <Optimize_ByPriority Value="1"/>
+        <Optimize_WhichDirection Value="0"/>
+        <Optimize_InnerToOuter Value="1"/>
+        <Optimize_ByDirection Value="0"/>
+        <Optimize_ReduceTravel Value="1"/>
+        <Optimize_HideBacklash Value="0"/>
+        <Optimize_ReduceDirChanges Value="0"/>
+        <Optimize_ChooseCorners Value="0"/>
+        <Optimize_AllowReverse Value="1"/>
+        <Optimize_RemoveOverlaps Value="0"/>
+        <Optimize_OptimalEntryPoint Value="1"/>
+        <Optimize_OverlapDist Value="0.025"/>
+    </UIPrefs>
+    <CutSetting type="Cut">
+        <index Value="0"/>
+        <name Value="C00"/>
+        <minPower Value="3"/>
+        <maxPower Value="95"/>
+        <maxPower2 Value="20"/>
+        <speed Value="10.8333"/>
+        <manualTabs Value="0"/>
+        <tabSize Value="0.2"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+        <tabSpacing Value="100"/>
+        <tabsUseSpacing Value="0"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="1"/>
+        <name Value="C01"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Scan">
+        <index Value="2"/>
+        <name Value="C02"/>
+        <minPower Value="10"/>
+        <maxPower Value="95"/>
+        <maxPower2 Value="20"/>
+        <speed Value="66.6667"/>
+        <manualTabs Value="0"/>
+        <tabSize Value="0.2"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+        <tabSpacing Value="100"/>
+        <tabsUseSpacing Value="0"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="3"/>
+        <name Value="C03"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="4"/>
+        <name Value="C04"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="5"/>
+        <name Value="C05"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="6"/>
+        <name Value="C06"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="7"/>
+        <name Value="C07"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="8"/>
+        <name Value="C08"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Scan">
+        <index Value="9"/>
+        <name Value="C09"/>
+        <minPower Value="10"/>
+        <maxPower Value="10"/>
+        <maxPower2 Value="20"/>
+        <speed Value="166.667"/>
+        <scanOpt Value="individual"/>
+        <overscanPercent Value="0.5"/>
+        <interval Value="0.05"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="10"/>
+        <name Value="C10"/>
+        <minPower Value="10"/>
+        <maxPower Value="10"/>
+        <maxPower2 Value="20"/>
+        <speed Value="166.667"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="11"/>
+        <name Value="C11"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="12"/>
+        <name Value="C12"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Scan">
+        <index Value="13"/>
+        <name Value="C13"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="14"/>
+        <name Value="C14"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="15"/>
+        <name Value="C15"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="16"/>
+        <name Value="C16"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="17"/>
+        <name Value="C17"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="18"/>
+        <name Value="C18"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="19"/>
+        <name Value="C19"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="20"/>
+        <name Value="C20"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="21"/>
+        <name Value="C21"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="22"/>
+        <name Value="C22"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="23"/>
+        <name Value="C23"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="24"/>
+        <name Value="C24"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <interval Value="0.05"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+    </CutSetting>
+    <CutSetting type="Scan">
+        <index Value="25"/>
+        <name Value="C25"/>
+        <minPower Value="10"/>
+        <maxPower Value="10"/>
+        <maxPower2 Value="20"/>
+        <speed Value="166.667"/>
+        <scanOpt Value="byGroup"/>
+        <overscanPercent Value="0.5"/>
+        <interval Value="0.05"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+    </CutSetting>
+    <CutSetting type="Scan">
+        <index Value="26"/>
+        <name Value="C26"/>
+        <maxPower Value="24"/>
+        <maxPower2 Value="20"/>
+        <speed Value="166.667"/>
+        <manualTabs Value="0"/>
+        <tabSize Value="0.2"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+        <tabSpacing Value="100"/>
+        <tabsUseSpacing Value="0"/>
+    </CutSetting>
+    <CutSetting type="Scan">
+        <index Value="27"/>
+        <name Value="C27"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Scan">
+        <index Value="28"/>
+        <name Value="C28"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Cut">
+        <index Value="29"/>
+        <name Value="C29"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+    </CutSetting>
+    <CutSetting type="Tool">
+        <index Value="30"/>
+        <name Value="T1"/>
+    </CutSetting>
+    <CutSetting type="Tool">
+        <index Value="31"/>
+        <name Value="T2"/>
+    </CutSetting>
+    <CutSetting_Img type="Image">
+        <index Value="0"/>
+        <name Value="C00"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+        <ditherMode Value="grayscale"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="1"/>
+        <name Value="C01"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="2"/>
+        <name Value="C02"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="3"/>
+        <name Value="C03"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="4"/>
+        <name Value="C04"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="5"/>
+        <name Value="C05"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="6"/>
+        <name Value="C06"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="7"/>
+        <name Value="C07"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="8"/>
+        <name Value="C08"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="9"/>
+        <name Value="C09"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="10"/>
+        <name Value="C10"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="11"/>
+        <name Value="C11"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="12"/>
+        <name Value="C12"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="13"/>
+        <name Value="C13"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="14"/>
+        <name Value="C14"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="15"/>
+        <name Value="C15"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="16"/>
+        <name Value="C16"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="17"/>
+        <name Value="C17"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="18"/>
+        <name Value="C18"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="19"/>
+        <name Value="C19"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="20"/>
+        <name Value="C20"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="21"/>
+        <name Value="C21"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="22"/>
+        <name Value="C22"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="23"/>
+        <name Value="C23"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="24"/>
+        <name Value="C24"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="25"/>
+        <name Value="C25"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+        <ditherMode Value="atkinson"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="26"/>
+        <name Value="C26"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="27"/>
+        <name Value="C27"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="28"/>
+        <name Value="C28"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <CutSetting_Img type="Image">
+        <index Value="29"/>
+        <name Value="C29"/>
+        <maxPower Value="20"/>
+        <maxPower2 Value="20"/>
+        <speed Value="100"/>
+        <ditherMode Value="stucki"/>
+    </CutSetting_Img>
+    <Notes ShowOnLoad="0" Notes=""/>
+</LightBurnProject>
