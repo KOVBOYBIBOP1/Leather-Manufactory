@@ -1,0 +1,3 @@
+Daniil
+DESKTOP-8GM4JRQ 
+5 окт€бр€ 2025 г.  23:31:01
