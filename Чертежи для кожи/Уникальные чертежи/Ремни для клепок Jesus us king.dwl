@@ -1,0 +1,3 @@
+Daniil
+DESKTOP-8GM4JRQ 
+16 ÿםגאנÿ 2026 ד.  1:07:21
